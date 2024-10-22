@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get update && \
     apt-utils apt-transport-https bc build-essential ca-certificates \
     ccache cpio curl dialog file gawk gcc-mipsel-linux-gnu git golang-go \
     libncurses-dev locales lzop mc rsync ssh sudo u-boot-tools unzip \
-    vim wget whiptail
+    vim wget whiptail graphviz
 
 RUN update-ca-certificates
 
@@ -19,6 +19,6 @@ RUN echo 'me:me' | chpasswd
 
 USER me
 
-ENV BR2_DL_DIR=/home/me/workspace/downloads
+ENV BR2_DL_DIR=/home/me/docker-worker/workspace/downloads
 WORKDIR /home/me
 
