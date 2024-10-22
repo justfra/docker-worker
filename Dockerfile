@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get update && \
     apt-utils apt-transport-https bc build-essential ca-certificates \
     ccache cpio curl dialog file gawk gcc-mipsel-linux-gnu git golang-go \
     libncurses-dev locales lzop mc rsync ssh sudo u-boot-tools unzip \
-    vim wget whiptail graphviz
+    vim wget whiptail graphviz python3 python3-matplotlib
 
 RUN update-ca-certificates
 
